@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>S&amp;M Dulce Amor — Postres artesanales</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="S&M Dulce Amor - Postres artesanales. Menú y pedidos por WhatsApp." />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <div class="brand">
+       <div class="logo">
+        <img src="Imagenes postres/logo.png" alt="Logo S&M Dulce Amor">
+        </div>
+        <div class="brand-text">
+          <h1>S&amp;M Dulce Amor</h1>
+          <p class="tagline">Postres artesanales · Fusagasugá</p>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="#inicio">Inicio</a>
+        <a href="#menu">Menú</a>
+        <a href="#contacto">Pedir</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Inicio -->
+    <section id="inicio" class="hero">
+      <div class="wrap hero-inner">
+        <div class="hero-text">
+          <h2>Delicias caseras hechas con amor</h2>
+          <p>Hechos con ingredientes frescos y recetas tradicionales. Pide fácil por WhatsApp y recibe atención personalizada.</p>
+          <p class="horario">Horario: Lun - Dom · 8:00 AM - 7:00 PM</p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="#menu">Ver menú</a>
+            <a class="btn btn-whatsapp" id="whatsapp-hero" href="#" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+          </div>
+        </div>
+        <div class="hero-img">
+            <img src="Imagenes postres/logo.png" alt="">
+        </div>
+      </div>
+    </section>
+
+    <!-- Menú -->
+    <section id="menu" class="section">
+      <div class="wrap section-head">
+        <h2>Menú de Postres</h2>
+        <p>Explora nuestras opciones. Haz clic en "Pedir" en la tarjeta del producto para enviar el pedido por WhatsApp.</p>
+      </div>
+
+      <div class="wrap grid" id="product-grid">
+        <!-- Cada tarjeta de producto -->
+        <article class="card">
+          <div class="card-media"><img src="Imagenes postres/limon.png" alt="Postre de Limón" onerror="this.style.visibility='hidden'"/></div>
+          <div class="card-body">
+            <h3>🍋 Postre de Limón</h3>
+            <p class="desc">Cremoso, refrescante y con el toque justo de acidez. Hecho con tres leches, jugo natural de limón y galleta crocante.</p>
+            <div class="meta">
+              <span class="price">$5.000</span>
+              <button class="btn btn-outline btn-order" data-product="Postre de Limón">Pedir</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-media"><img src="Imagenes postres/maracuya.png" alt="Postre de Maracuyá" onerror="this.style.visibility='hidden'"/></div>
+          <div class="card-body">
+            <h3>💛 Postre de Maracuyá</h3>
+            <p class="desc">Suave y frutal, con el sabor tropical del maracuyá y una base de galleta. Dulce, ácido y delicioso en cada capa.</p>
+            <div class="meta">
+              <span class="price">$5.000</span>
+              <button class="btn btn-outline btn-order" data-product="Postre de Maracuyá">Pedir</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-media"><img src="Imagenes postres/cheescake de oreo.png" alt="Cheesecake de Oreo" onerror="this.style.visibility='hidden'"/></div>
+          <div class="card-body">
+            <h3>🍪 Cheesecake de Oreo</h3>
+            <p class="desc">Base de galleta Oreo triturada con mantequilla y una mezcla cremosa con el sabor clásico del chocolate.</p>
+            <div class="meta">
+              <span class="price">$5.000</span>
+              <button class="btn btn-outline btn-order" data-product="Cheesecake de Oreo">Pedir</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-media"><img src="Imagenes postres/cheescake de frutos rojos.png" alt="Cheesecake de Frutos Rojos" onerror="this.style.visibility='hidden'"/></div>
+          <div class="card-body">
+            <h3>🍒🫐 Cheesecake de Frutos Rojos</h3>
+            <p class="desc">Base de galleta, mezcla cremosa de tres leches y cobertura artesanal de fresa y mora con un toque de limón.</p>
+            <div class="meta">
+              <span class="price">$5.000</span>
+              <button class="btn btn-outline btn-order" data-product="Cheesecake de Frutos Rojos">Pedir</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-media"><img src="Imagenes postres/gelatina de fresa y crema.png" alt="Gelatina de Fresa con Crema" onerror="this.style.visibility='hidden'"/></div>
+          <div class="card-body">
+            <h3>🍓 Gelatina de Fresa con Crema</h3>
+            <p class="desc">Capas de gelatina de fresa y crema suave de tres leches, decorada con leche en polvo y trocitos de fruta fresca.</p>
+            <div class="meta">
+              <span class="price">$5.000</span>
+              <button class="btn btn-outline btn-order" data-product="Gelatina de Fresa con Crema">Pedir</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-media"><img src="Imagenes postres/gelatina mosaico.png" alt="Gelatina Mosaico" onerror="this.style.visibility='hidden'"/></div>
+          <div class="card-body">
+            <h3>🎨 Gelatina Mosaico</h3>
+            <p class="desc">Colorida y divertida mezcla de cubos de gelatina con crema de leche y leche condensada. Dulce y ligera.</p>
+            <div class="meta">
+              <span class="price">$5.000</span>
+              <button class="btn btn-outline btn-order" data-product="Gelatina Mosaico">Pedir</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-media"><img src="Imagenes postres/mouse de mango.png" alt="Mousse de Mango" onerror="this.style.visibility='hidden'"/></div>
+          <div class="card-body">
+            <h3>🥭 Mousse de Mango</h3>
+            <p class="desc">Textura suave y aireada, con mango natural y crema batida. Refrescante y perfecta para los amantes de lo tropical.</p>
+            <div class="meta">
+              <span class="price">$5.000</span>
+              <button class="btn btn-outline btn-order" data-product="Mousse de Mango">Pedir</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-media"><img src="Imagenes postres/tres leches.png" alt="Tres Leches con Durazno" onerror="this.style.visibility='hidden'"/></div>
+          <div class="card-body">
+            <h3>🍑 Tres Leches con Galleta y Durazno</h3>
+            <p class="desc">Postre cremoso por capas: galleta, mezcla de tres leches y durazno en almíbar. Dulce, suave y muy casero.</p>
+            <div class="meta">
+              <span class="price">$5.000</span>
+              <button class="btn btn-outline btn-order" data-product="Tres Leches con Galleta y Durazno">Pedir</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-media"><img src="Imagenes postres/arroz con leche.png" alt="Arroz con Leche" onerror="this.style.visibility='hidden'"/></div>
+          <div class="card-body">
+            <h3>🍚 Arroz con Leche</h3>
+            <p class="desc">Cremoso, con aroma a canela y el toque especial de la leche condensada. Tradicional, reconfortante y delicioso.</p>
+            <div class="meta">
+              <span class="price">$5.000</span>
+              <button class="btn btn-outline btn-order" data-product="Arroz con Leche">Pedir</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+
+    <!-- Contacto / Pedidos -->
+    <section id="contacto" class="section">
+      <div class="wrap section-head">
+        <h2>Contacto y Pedidos</h2>
+        <p>¿Listo para pedir? Pulsa el botón y envíanos tu pedido por WhatsApp.</p>
+      </div>
+
+      <div class="wrap contact-cards">
+        <div class="contact-card">
+          <h3>Pedido por WhatsApp</h3>
+          <p>Haz clic y escribe tu pedido — recibirás respuesta lo más pronto posible💌.</p>
+          <a id="whatsapp-contact" class="btn btn-whatsapp large" href="#" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+        </div>
+
+        <div class="contact-card">
+          <h3>Redes y dirección</h3>
+          <p>📍 Fusagasugá — Entrega a domicilio (consulta tarifas)</p>
+          <p>📱 Instagram / Facebook: <em>@smdulceamor</em></p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>© <span id="year"></span> S&amp;M Dulce Amor · Hecho con 🩷 · Fusagasugá</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

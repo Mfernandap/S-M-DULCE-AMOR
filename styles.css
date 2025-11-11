@@ -1,0 +1,155 @@
+:root{
+  --bg:#FAD3E7;
+  --card:#fed6eb;
+  --accent:#e895ae;
+  --accent-2:#e373ad;
+  --text:#0b0909;
+  --muted:#151112;
+  --radius:14px;
+  --container:1100px;
+  --shadow: 0 8px 18px rgba(10, 7, 8, 0.08);
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+.logo {
+  width: 60px; 
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  background: transparent;
+  box-shadow: none;
+}
+
+
+* {box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  background: linear-gradient(180deg, var(--bg), hwb(339 84% 4%));
+  color:var(--text);
+  line-height:1.45;
+}
+
+/* Layout */
+.wrap{max-width:var(--container);margin:0 auto;padding:1rem}
+.site-header{background:transparent;padding:1rem 0;position:sticky;top:0;z-index:50}
+.brand{display:flex;align-items:center;gap:12px}
+.logo{
+  width:64px;height:64px;border-radius:12px;
+  background:linear-gradient(135deg,var(--accent),var(--accent-2));
+  display:flex;align-items:center;justify-content:center;
+}
+.brand-text h1{margin:0;font-size:1.2rem}
+.brand-text .tagline{margin:0;font-size:0.9rem;color:var(--muted)}
+
+.nav{margin-left:auto;display:flex;gap:.8rem;align-items:center}
+.nav a{color:var(--text);text-decoration:none;padding:.45rem .7rem;border-radius:8px}
+.nav a:hover{background:var(--accent);}
+
+.hero-inner {
+  display:flex;
+  gap:2rem;
+  align-items:center;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  margin-top: -60px;
+}
+.hero-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.hero-img {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-img img {
+  width: 80%;
+  max-width: 260px;  /* controla el tamaño */
+  height: auto;
+  object-fit: contain;
+  border-radius: 12px;
+  background: transparent;
+  box-shadow: none;
+}
+#menu {
+  background-image: url("Imagenes\ postres/fondo.png");
+  background-repeat: repeat;
+  background-size: 120px auto;
+  background-color: #FAD3E7;
+}
+
+
+/* Buttons */
+.btn{display:inline-block;text-decoration:none;padding:.6rem 1rem;border-radius:10px;font-weight:600;cursor:pointer;border:0}
+.btn-primary{background:var(--accent-2);color:#f8cddc(255, 255, 255);box-shadow:var(--shadow)}
+.btn-outline{background:transparent;border:2px solid var(--accent);color:var(--text)}
+.btn-whatsapp{background:#25D366;color:white;border-radius:10px;padding:.6rem .9rem}
+
+/* Sections */
+.section{padding:2rem 0}
+.section-head{text-align:center;margin-bottom:1rem}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+
+/* Cards */
+.card{
+  background:var(--card);
+  border-radius:12px;
+  overflow:hidden;
+  box-shadow:var(--shadow);
+  display:flex;
+  flex-direction:column;
+}
+
+/* ✅ Ajuste: Imágenes más pequeñas y completas */
+.card-media {
+  height: 140px; /* altura menor */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FFF5EA;
+}
+.card-media img {
+  width: auto;
+  height: 100%;
+  object-fit: contain; /* se ve completa sin recortar */
+  border-radius: 8px;
+}
+
+.card-body{padding:1rem;display:flex;flex-direction:column;gap:.6rem}
+.card-body h3{margin:0;font-size:1.05rem}
+.card-body .desc{margin:0;color:var(--muted);font-size:0.95rem}
+.meta{display:flex;align-items:center;justify-content:space-between;margin-top:auto}
+.price{font-weight:700;color:var(--accent-2)}
+
+/* Contact cards */
+.contact-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
+.contact-card{background:var(--card);padding:1rem;border-radius:12px;box-shadow:var(--shadow)}
+
+/* Footer */
+.site-footer{padding:1.2rem 0;text-align:center;color:var(--muted);font-size:0.95rem}
+
+/* Responsive */
+@media (max-width:1000px){
+  .grid{grid-template-columns:repeat(2,1fr)}
+  .gallery-grid{grid-template-columns:repeat(3,1fr)}
+  .hero-img{max-width:48%}
+}
+@media (max-width:700px){
+  .nav{display:none}
+  .grid{grid-template-columns:1fr}
+  .contact-cards{grid-template-columns:1fr}
+  .hero-inner{flex-direction:column}
+  .hero-img{width:100%}
+}
